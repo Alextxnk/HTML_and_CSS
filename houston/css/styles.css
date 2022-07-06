@@ -15,20 +15,6 @@ span {
    font-size: 16px;
    /* margin-bottom: 5px; */
 }
-/* .standard {
-   margin-top: 1em;
-   margin-bottom: 1em;
-   border: 1px solid #a2a9b1;
-   border-collapse: collapse;
-}
-table {
-   display: table;
-   border-collapse: collapse;
-   box-sizing: border-box;
-   text-indent: initial;
-   border-spacing: 2px;
-   border-color: grey;
-}  */
 table {
    text-align: center;
    border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
@@ -50,3 +36,22 @@ tr, th, td {
 .blue-background {
    background: #eaf3ff;
 }
+body {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   }
+   h1, h2 {
+   font-family: Arial;
+   margin-top: 1.5em;
+   }
+   h1 {
+   font-size: 32px;
+   } 
+   figcaption {
+   font-style: italic;
+   }
+   figure {
+      clear: right;
+      float: right;
+   }
