@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First lesson</title>
+</head>
+
+<body>
+	<!-- Чтобы отформатировать код, нажми Shift + Alt + F -->
+	<!-- В VSCode можно быстро вставить шаблон HTML-документа. Для этого нужно открыть пустой .html файл, написать html:5 и нажать Tab. -->
+
+	<!-- p + tab, lorem + tab  -->
+	<p><b>Абзац</b></p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus blanditiis itaque repudiandae voluptates
+		necessitatibus ex aperiam maiores quibusdam hic? Accusantium ratione officia pariatur eum id voluptas aliquid blanditiis deserunt perspiciatis?</p> 
+	<div>
+		<a href="#anchor">Перейти к якорю</a>
+	</div>
+	
+	<p><b>Маркированный список</b></p>
+	Список ингредиентов:
+	<ul>
+		<li>Картошка</li>
+		<li>Морковка</li>
+		<li>Свекла</li>
+	</ul>
+
+	<p><b>Нумерованный список</b></p>
+	Инструкция по приготовлению:
+	<ol>
+		<li>Довести воду до кипения</li>
+		<li>Засыпать ингредиенты</li>
+		<li>Варить 10 минут</li>
+	</ol>
+
+	<p><b>Список определений</b></p>
+	<dl>
+		<dt>Гаспачо</dt><dd>лёгкий холодный суп из перетёртых в пюре свежих овощей</dd>
+		<dt>Том-ям</dt><dd>кисло-острый суп на основе куриного бульона с креветками, курицей, рыбой или другими морепродуктами</dd>
+		<dt>Борщ</dt><dd>разновидность супа на основе свёклы, которая придаёт борщу характерный красный цвет</dd>
+	</dl>
+	<ul>
+		<li>Омлет
+			<ul>
+				<li>Молоко</li>
+				<li>Яйца</li>
+			</ul>
+		</li>
+		<li>Блинчики
+			<ul>
+				<li>Молоко</li>
+				<li>Яйца</li>
+				<li>Мука</li>
+				<li>Сахар</li>
+				<li>Соль</li>
+				<li>Разрыхлитель</li>
+			</ul>
+		</li>
+		<li>Торт</li>
+		<li>Пирог</li>
+	</ul>
+	<img
+	title="Типы"
+	src="img/dataTypes.jpg"
+	alt="Типы данных"
+	width="743"
+	height="753"
+	>
+
+	<h1 id="anchor">Якорь</h1>
+
+	<figure>
+		<img src="https://www.google.ru/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png">
+		<figcaption>
+			Лого гугла от 2015 года
+		</figcaption>
+	</figure>
+
+	<!-- target="_blank" нужен, чтоб ссылка открывалась на новой странице  -->
+	<a href="https://google.com/" target="_blank">Google</a>
+
+	<!-- Атрибут border устарел и его применение в HTML5 не приветствуется. Используйте данный атрибут только пока знакомитесь с таблицами. Данный атрибут заменяет свойство border в CSS.  -->
+	<p><b>Обычная таблица</b></p>
+	<table border="1">
+		<tr>
+			<th>Имя</th>
+			<th>Возраст</th> 
+			<th>Суперспособность</th>
+		</tr>
+		<tr>
+			<td>Логан</td>
+			<td>186</td> 
+			<td>Повышенная способность к регенерации</td>
+		</tr>
+		<tr>
+			<td>Профессор икс</td>
+			<td>94</td>
+			<td>Чтение мыслей, вызов иллюзий, временного паралича, способность останавливать время</td> 
+		</tr>
+	</table>
+
+	<table border="1">
+		<caption>Сотрудники отдела поддержки</caption>
+		<thead>
+			<tr>
+				<th>Имя</th>
+				<th>Должность</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Петя</td>
+				<td>Менеджер</td>
+			</tr>
+			<tr>
+				<td>Маша</td>
+				<td>Разработчик</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Вася</td>
+				<td>Девопс</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<!-- атрибут colspan объединяет столбцы таблицы -->
+	<p><b>Объединение столбцов</b></p>
+	<table border="1">
+		<tr>
+			<td>Первая ячейка</td>
+			<td>Вторая ячейка</td>
+			<td>Третья ячейка</td>
+		</tr>
+		<tr>
+			<td colspan="3">Единственная ячейка</td>
+		</tr>
+	</table>
+
+	<!-- атрибут rowspan объединяет строки таблицы -->
+	<p><b>Объединение строк</b></p>
+	<table border="1">
+		<tr>
+			<td rowspan="2">Левая ячейка</td>
+			<td>Верхняя ячейка</td>
+		</tr>
+		<tr>
+			<td>Нижняя ячейка</td>
+		</tr>
+	</table>
+
+	<p><b>Объединение строк и столбцов</b></p>
+	<table border="1">
+		<tr>
+			<td rowspan="2">Левая ячейка</td>
+			<td>Средняя ячейка</td>
+			<td>Правая ячейка</td>
+		</tr>
+		<tr>
+			<td colspan="2">Нижняя ячейка</td>
+		</tr>
+	</table>
+
+	<p>Формы</p>
+	<form action="">
+		<label for="">Text</label>
+		<input type="text" placeholder="text">
+	</form>
+	
+	<form action="">
+		<label for="">Password</label>
+		<input type="password" placeholder="password">
+	</form>
+	
+	<form action="">
+		<label for="">Check</label>
+		<input type="checkbox">
+	</form>
+
+	<form action="">
+		<input type="radio" name="gender" value="male" checked> Мужской<br>
+		<input type="radio" name="gender" value="female"> Женский<br>
+		<input type="radio" name="gender" value="other"> Другой
+	</form>
+	
+	<form action="">
+		<label for="">File</label>
+		<input type="file">
+	</form>
+
+	<form action="">
+		<label for="">Сброс всех значений</label>
+		<input type="reset">
+	</form>
+
+	<form action="">
+		<label for="">Отправка</label>
+		<input type="submit">
+	</form>
+
+	<button>Кнопка</button>
+
+	<!-- Ввод E-Mail, type="email". Текстовое поле, у которого на клавиатуре мобильных устройств появляется символ @.
+	Номер телефона, type="tel". На мобильных устройствах открывается клавиатура с числами.
+	Ввод ссылки, type="url".
+	Числовое поле, type="number". Помимо клавиатуры с цифрами появляется возможность переключать значения поля. Атрибуты min и max определяют нижнее и верхнее возможное значение, step - шаг изменения, a value - начальное значение.
+	Числовой ползунок, type="range". Появляются уже указанные атрибуты min, max, step и ﻿value.
+	Поиск, type="search". Google Chrome добавляет крестик для очистки введенной строки. На мобильных устройствах появляется кнопка поиска. -->
+
+	<form action="">
+		<input type="range">
+	</form>
+
+	<script src="lessons/lesson02.js"></script>
+</body>
+
+</html>

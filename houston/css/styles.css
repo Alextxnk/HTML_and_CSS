@@ -1,0 +1,16 @@
+* {
+   /* применение ко всем */
+   box-sizing: border-box;
+}
+.container {
+   max-width: 1170px; /*ширина*/
+   margin: auto; /*чтоб "контейнер" был посередине*/
+   width: 90%;
+}
+p {
+   font-size: 18px;
+}
+span {
+   font-size: 16px;
+   /* margin-bottom: 5px; */
+}
